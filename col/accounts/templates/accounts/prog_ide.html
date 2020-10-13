@@ -1,0 +1,41 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <h1>Programming</h1>
+{% endblock %}
+
+{% block body %}
+            <div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						<!-- h4 class="page-title">MatLab</h4 -->
+
+                            {% comment %} MatLab {% endcomment %}
+                                <div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Programming IDE</h4>
+										<p class="card-category">This is only the layout</p>
+									</div>
+									<div class="card-body">
+										<div class="row-2.5">
+											<div class="col-8">
+												<img class="appstream" src = "{% static 'img/prog_ide.png' %}" >
+												
+											</div>
+	
+											<p> <br> </p>
+										
+											<div class="col-8">
+                                            	<button class="btn btn-primary btn-round">Submit</button>
+											</div>
+                                        </div>
+									</div>
+								</div>
+
+                    </div>
+
+                </div>
+            </div>
+        
+{% endblock %}

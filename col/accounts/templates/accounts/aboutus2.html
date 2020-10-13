@@ -1,0 +1,30 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block bg %}
+{% endblock bg %}
+
+{% block content %}
+<div class="wrap">
+
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1" style = "background-image: url({% static 'img/aboutus-01.png'%}); height: 100vh;">
+      <div class="slide-content">
+        <h1>meet <br>the <br> EEEnnovators</h1>
+      </div>
+    </div>
+    <div class="slide slide2" style = "background-image: url({% static 'img/aboutus-03-01.png'%}); height: 100vh;">
+      <div class="slide-content">
+        <h3><b>A group of Computer Engineering students <br> dedicated to providing students <br>with a creative and accessible virtual laboratory <br> for a better online learning experience</b></h3>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<footer class="footer">
+  <div class="copyright ml-auto">
+      Business vector created by <a href="https://www.freepik.com/vectors/business">freepik - www.freepik.com</a>
+  </div>
+</footer>
+{% endblock content %}

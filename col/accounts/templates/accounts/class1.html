@@ -1,0 +1,84 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <h1>Class Page</h1>
+{% endblock %}
+
+{% block body %}
+			<div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+                        <div class="row">
+                            <div class= "col-0.25">
+                                <i class="la la-bookmark-o"></i> </div>
+                            <div class= "col">
+						        <h4 class="page-title">Class Page:</h4> </div>
+                        </div>
+
+                                <div class="card">
+									<div class="card-header">
+										<div class="card-title">Introduction to Python Programming</div>
+									</div>
+									<div class="card-body">
+										<div class="card-sub">
+											This is the basic table view of the ready dashboard :
+										</div>
+										<table class="table mt-3">
+											<thead>
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">Exercises</th>
+													<th scope="col">Progress</th>
+													<th scope="col">Remarks</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Lab Exercise 1: Strings and Lists</td>
+													<td>
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked>
+                                                        <span class="form-check-sign">Done</span>
+                                                        </label>
+                                                    </td>
+													<td>Improve on coding style</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Lab Exercise 2: Dictionaries</td>
+                                                    <td>
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked>
+                                                        <span class="form-check-sign">Done</span>
+                                                        </label>
+                                                    </td>
+													<td>Put more comments</td>
+												</tr>
+												<tr>
+													<td>3</td>
+                                                   
+													<td> <a href="{% url 'class1vn'%}">Lab Exercise 3: Pointers </a></td>
+                                                    
+													<td>
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked>
+                                                        <span class="form-check-sign">Done</span>
+                                                        </label>
+                                                    </td>
+													<td>Very good</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        
+{% endblock %}

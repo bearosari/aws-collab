@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href="{% static 'css/style.css' %}">
+    <link rel = "stylesheet" type = "text/css" href="{% static 'css/style2.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <title>ColLab</title>
+  </head>
+  <body>
+    {% block bg %}
+    <div id = "bg" style = "background-image: url({% static 'img/bg4.png'%});">
+    {% endblock bg %}
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <span class="navbar-brand ml-4" href="">ColLab</span>
+      <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link px-3" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'signin' %}">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'signup' %}">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="{% url 'aboutus' %}">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    {% block content %}
+    <h1 style = "color:#3d5af1; font-size:115px; margin: 200px 0px 0px 100px;"><b>COLLAB</b></h1>
+    <h4 style = "color:#0e153a; font-size: 40px; margin: 0px 0px 0px 110px; line-height: 0px;"><b>VIRTUAL LABORATORY</b></h4>
+    <h4 style = "color:#22d1ee; font-size: 20px; margin: 50px 0px 0px 110px;"><b></b></h4>
+    </div>
+
+    <footer class="footer">
+    <div class="copyright ml-auto">
+        Business vector created by <a href="https://www.freepik.com/vectors/business">freepik - www.freepik.com</a>
+    </div>
+    </footer>
+    {% endblock content %}
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
+</html>

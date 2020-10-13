@@ -1,0 +1,40 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <h1>Pointers</h1>
+{% endblock %}
+
+{% block body %}
+            <div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						<h4 class="page-title">Classes:</h4>
+
+                            {% comment %} INTRO TO VISUAL NOVEL-POINTERS {% endcomment %}
+                                <div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Check out this Visual Novel</h4>
+										<p class="card-category">
+											Click the green button to play. This is an introduction to our lesson in programming pointers.
+										</p>
+									</div>
+									<div class="card-body">
+										<p class="demo">
+											
+                                            <iframe src="https://scratch.mit.edu/projects/421882901/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+										</p>
+                                        <div class="row-3">
+											<a href="{% url 'prog_ide'%}">
+                                            	<button class="btn btn-primary btn-round">Appstream</button>
+											</a>
+                                        </div>
+									</div>
+								</div>
+
+                    </div>
+
+                </div>
+            </div>
+        
+{% endblock %}
