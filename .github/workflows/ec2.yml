@@ -21,6 +21,7 @@ jobs:
       uses: shimataro/ssh-key-action@v2
       with:
         key: ${{ secrets.SSH_KEY }}
+        name: id_rsa
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - name: rsync over ssh
       run: rsync ./ ubuntu@${{ secrets.KNOWN_HOSTS }}:/home/ubuntu/collab
