@@ -14,4 +14,5 @@ urlpatterns = [
 
     path('matlab/', views.matlab, name = 'matlab'),
     path('programming/', views.prog_ide, name = 'prog_ide'),
+    path('notifications/', views.notif, name = 'notif'),
 ]

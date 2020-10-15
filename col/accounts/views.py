@@ -90,3 +90,9 @@ def prog_ide(request):
         'title':'Programming', 
     }
     return render(request, 'accounts/prog_ide.html', context)
+
+def notif(request):
+    context = {
+        'title':'Notifications', 
+    }
+    return render(request, 'accounts/notif.html', context)
