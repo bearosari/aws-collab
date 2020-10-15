@@ -49,7 +49,7 @@ def signin(request):
         'title': 'signin',
         'form': form,
     }
-    return render(request, 'accounts/signin.html', context)
+    return render(request, 'register/login.html', context)
 
 def signup(request):
     if request.method == "POST":
@@ -62,7 +62,7 @@ def signup(request):
             profile = profile_form.save(commit = False)
             profile.user = user
             profile.save()
-            return redirect('signin')
+            return redirect('login')
     else:
         user_form = UserForm()
         profile_form = ProfileForm()
